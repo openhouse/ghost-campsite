@@ -527,6 +527,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 1.9rem;
 }
 
+/*
+CAMPSITE
+Add secondary navigation items in the admin to add Font Awesome icons.
+The label is the icon a name (lowercase, case sensitive)
+https://fontawesome.com/v4.7.0/icons/
+*/
+
 .social-link-fa .fa {
   font-size: 2rem;
   color: white;
