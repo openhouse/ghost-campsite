@@ -527,6 +527,14 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 1.9rem;
 }
 
+.social-link-fa .fa {
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  top: 3px;
+}
+
+
 .subscribe-button {
     display: block;
     margin: 0 0 0 10px;

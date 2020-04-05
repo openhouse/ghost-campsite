@@ -1,0 +1,11 @@
+{{#if isSecondary}}
+  {{#foreach navigation}}
+      <a class="social-link social-link-fa" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener"><i class="fa fa-{{label}}" aria-hidden="true"></i></a>
+  {{/foreach}}
+{{else}}
+    <ul class="nav" role="menu">
+        {{#foreach navigation}}
+        <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+{{/if}}
