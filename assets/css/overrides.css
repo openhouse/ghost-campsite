@@ -22,3 +22,18 @@ https://fontawesome.com/v4.7.0/icons/
     padding: 5vw 3vw 6vw;
     padding-top: calc(5vw - 55px);
 }
+
+/* switch text or icon on social links depending on context */
+.site-nav-right .social-link-text {
+  display: none;
+}
+.site-footer-nav .social-link-fa{
+  display: none;
+}
+.site-footer-nav .social-link-text {
+  text-transform: capitalize;
+}
+.site-nav-content .social-link-text {
+  color: white;
+  opacity: .8;
+}

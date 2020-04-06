@@ -7,6 +7,7 @@ https://fontawesome.com/v4.7.0/icons/
 {{#if isSecondary}}
   {{#foreach navigation}}
       <a class="social-link social-link-fa" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener"><i class="fa fa-{{label}}" aria-hidden="true"></i></a>
+      <a class="social-link-text" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener">{{label}}</a>
   {{/foreach}}
 {{else}}
     <ul class="nav" role="menu">

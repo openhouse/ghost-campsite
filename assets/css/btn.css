@@ -36,6 +36,11 @@
   outline: none;
   opacity: 0.90 !important;
 }
+.btn:active {
+  color: #212529;
+  outline: none;
+  opacity: 0.85 !important;
+}
 
 
 
@@ -72,6 +77,8 @@ fieldset:disabled .btn {
   background-color: #025ce2;
   border-color: #0257d5;
   box-shadow: 0 0 0 0.2rem rgba(49, 132, 253, 0.5);
+  background-color: var(--cs-color-primary);
+  border-color: var(--cs-color-primary);
 }
 
 .btn-primary:active, .btn-primary.active,
@@ -79,6 +86,8 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #0257d5;
   border-color: #0252c9;
+  background-color: var(--cs-color-primary);
+  border-color: var(--cs-color-primary);
 }
 
 .btn-primary:active:focus, .btn-primary.active:focus,
