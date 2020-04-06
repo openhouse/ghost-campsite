@@ -11,7 +11,12 @@ https://fontawesome.com/v4.7.0/icons/
 {{else}}
     <ul class="nav" role="menu">
         {{#foreach navigation}}
-        <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem"><a href="{{url absolute="true"}}">{{label}}</a></li>
+          {{#unless @index}}
+            {{!-- CAMPSITE show first nav link as primary button --}}
+            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem"><a class="btn btn-primary box-shadow-1" href="{{url absolute="true"}}">{{label}}</a></li>
+          {{else}}
+            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem"><a href="{{url absolute="true"}}">{{label}}</a></li>
+          {{/unless}}
         {{/foreach}}
     </ul>
 {{/if}}
