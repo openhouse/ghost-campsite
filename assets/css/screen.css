@@ -2,3 +2,11 @@
 @import "btn.css";
 @import "shadow.css";
 @import "overrides.css";
+
+@font-face{
+  font-family: headline;
+  src:  url(../fonts/TradeGothicLTPro-Bold.eot?) format("eot"),
+        url(../fonts/TradeGothicLTPro-Bold.woff2) format("woff2"),
+        url(../fonts/TradeGothicLTPro-Bold.woff) format("woff"),
+        url(../fonts/TradeGothicLTPro-Bold.ttf) format("truetype");
+}

@@ -51,6 +51,7 @@
 
   .post-full-title {
     color: white;
+    text-transform: uppercase;
   }
   .post-full-custom-excerpt {
     color: white;

@@ -12,3 +12,9 @@
 .post-card.featured .post-card-excerpt p {
   margin-bottom: 0;
 }
+
+
+/* typeography */
+.post-card-title {
+  text-transform: uppercase;
+}
