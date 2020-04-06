@@ -1,0 +1,12 @@
+/* featured posts display as pages */
+.post-card.featured .post-card-meta.hide-featured {
+  display: none;
+}
+.post-card.featured .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.post-card.featured .post-card-excerpt p {
+  margin-bottom: 0;
+}
