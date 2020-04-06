@@ -64,3 +64,6 @@
 }
 
 /* featured posts display as pages */
+.featured .post-full-byline {
+  display: none;
+}
