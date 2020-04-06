@@ -14,3 +14,9 @@ https://fontawesome.com/v4.7.0/icons/
   position: relative;
   top: 3px;
 }
+
+
+.site-home-header .site-header-content {
+    padding: 5vw 3vw 6vw;
+    padding-top: calc(5vw - 55px);
+}
