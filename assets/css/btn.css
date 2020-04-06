@@ -16,7 +16,7 @@
   padding: 0.375rem 0.75rem;
   /* font-size: 1rem; */
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
   opacity: 1 !important;
 }
 
@@ -34,8 +34,10 @@
 .btn:hover {
   color: #212529;
   outline: none;
-
+  opacity: 0.90 !important;
 }
+
+
 
 .btn:focus, .btn.focus {
   outline: 0;
@@ -61,6 +63,8 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #025ce2;
   border-color: #0257d5;
+  background-color: var(--cs-color-primary);
+  border-color: var(--cs-color-primary);
 }
 
 .btn-primary:focus, .btn-primary.focus {

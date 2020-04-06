@@ -13,6 +13,13 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
+{{!-- CAMPSITE: pass post variables to css --}}
+<style>
+  .post-full-header {
+    --featured-image-url: url({{img_url feature_image size="l"}});
+  }
+</style>
+{{!-- CAMPSITE --}}
 
 <main id="site-main" class="site-main outer">
     <div class="inner">
@@ -21,6 +28,9 @@ into the {body} of the default.hbs template --}}
 
             <header class="post-full-header">
                 <h1 class="post-full-title">{{title}}</h1>
+                {{#if custom_excerpt}}
+                  <p class="post-full-custom-excerpt">{{custom_excerpt}}</p>
+                {{/if}}
             </header>
 
             {{#if feature_image}}

@@ -9,6 +9,13 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
+{{!-- CAMPSITE: pass post variables to css --}}
+<style>
+  .post-full-header {
+    --featured-image-url: url({{img_url feature_image size="l"}});
+  }
+</style>
+{{!-- CAMPSITE --}}
 
 <main id="site-main" class="site-main outer">
     <div class="inner">
