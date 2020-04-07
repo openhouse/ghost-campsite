@@ -1,0 +1,23 @@
+#mc_embed_signup {
+  width: 100%;
+  font-family: inherit !important;
+  /* space between checkboxes and their labels */
+  input[type='checkbox'] {
+      margin-right: 1rem;
+  }
+
+  input[type='submit'] {
+    font-weight: 500;
+  }
+
+
+  /*
+  form {
+    padding: 0 !important;
+  }
+  */
+
+  h2 {
+    text-transform: uppercase;
+  }
+}
