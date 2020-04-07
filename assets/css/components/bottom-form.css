@@ -1,0 +1,11 @@
+.bottom-form {
+  max-width: 700px;
+  margin: 0 auto;
+
+  .mc-field-group {
+    width: 100%;
+  }
+  #mc_embed_signup form {
+    padding-left: 0 !important;
+  }
+}

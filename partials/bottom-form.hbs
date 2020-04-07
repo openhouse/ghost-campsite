@@ -1,0 +1,16 @@
+<section class="bottom-form post-full-content p-0 pt-0 mb-5 copy-font">
+
+{{#get "posts" include="authors,tags" filter="tag:hash-bottomform" limit="1" as |bottomPosts|}}
+    {{#foreach bottomPosts as |post|}}
+
+      {{#post}}
+        <h2 class="headline-font all-caps mt-0">{{title}}</h2>
+        {{custom_excerpt}}<br>
+        {{content}}
+      {{/post}}
+
+    {{/foreach}}
+
+  {{/get}}
+
+</section>

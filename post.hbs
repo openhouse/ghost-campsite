@@ -129,8 +129,16 @@ into the {body} of the default.hbs template --}}
 
         </article>
 
+        {{!-- CAMPSITE BOTTOM FORM: tag bottom form with #bottomForm to include on most pages--}}
+        {{#has tag="#noBottomForm"}} {{!-- don't show on pages and posts tagged "#noBottomForm"--}}
+        {{else}}
+          <hr>
+          {{> "bottom-form"}}
+        {{/has}}
+
     </div>
 </main>
+
 
 {{!-- Links to Previous/Next posts --}}
 <aside class="read-next outer">
@@ -162,6 +170,7 @@ into the {body} of the default.hbs template --}}
                         <a href="{{#../primary_tag}}{{url}}{{/../primary_tag}}">{{plural meta.pagination.total empty='No posts' singular='% post' plural='See all % posts'}}
                             →</a>
                     </footer>
+
                 </article>
                 {{/if}}
             {{/get}}

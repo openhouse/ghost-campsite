@@ -1,42 +1,10 @@
 @import "casper-screen.css";
 
+@import "components/fonts.css";
 @import "components/btn.css";
 @import "components/shadow.css";
 @import "components/card.css";
 @import "components/utilities.css";
+@import "components/bottom-form.css";
 
 @import "overrides.css";
-
-@font-face{
-  font-family: headline;
-  src:  url('../fonts/TradeGothicLTPro-Bold.eot?') format("eot"),
-        url('../fonts/TradeGothicLTPro-Bold.woff2') format("woff2"),
-        url('../fonts/TradeGothicLTPro-Bold.woff') format("woff"),
-        url('../fonts/TradeGothicLTPro-Bold.ttf') format("truetype");
-}
-
-/*
-@font-face {
-  font-family:Geometric-Book;
-  src: url('../fonts/Geometric-Book.eot?') format('eot'),
-      url('../fonts/Geometric-Book.otf') format('opentype'),
-      url('../fonts/Geometric-Book.ttf') format('truetype');
-}
-*/
-
-@font-face {
-  font-family: round-book;
-  src: url('../fonts/round-book.otf');
-  font-display: swap;
-}
-
-/*
-round-book, -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
-*/
-.post-card-excerpt,
-  .post-full-custom-excerpt,
-  .post-full-content,
-  .post-full-content h5,
-  .subscribe-overlay-description {
-  font-family: round-book, -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
