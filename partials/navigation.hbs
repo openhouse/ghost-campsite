@@ -4,20 +4,42 @@ Add secondary navigation items in the admin to add Font Awesome icons.
 The label is the icon name (lowercase, case sensitive)
 https://fontawesome.com/v4.7.0/icons/
 --}}
+{{!--
 {{#if isSecondary}}
   {{#foreach navigation}}
-      <a class="social-link social-link-fa" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener"><i class="fa fa-{{label}}" aria-hidden="true"></i></a>
-      <a class="social-link-text" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener">{{label}}</a>
+      <a class="social-link social-link-fa nav-item-{{@index}}" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener"><i class="fa fa-{{label}}" aria-hidden="true"></i></a>
+      <a class="social-link-text nav-item-{{@index}}" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener">{{label}}</a>
+      {{#unless @index}}
+        <a class="social-link-btn btn btn-primary nav-item-{{@index}}" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener">{{label}}</a>
+      {{/unless}}
   {{/foreach}}
 {{else}}
     <ul class="nav" role="menu">
         {{#foreach navigation}}
           {{#unless @index}}
-            {{!-- CAMPSITE show first nav link as primary button --}}
-            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem"><a class="btn btn-primary box-shadow-1" href="{{url absolute="true"}}">{{label}}</a></li>
+            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem"><a class="btn btn-primary box-shadow-1 nav-item-{{@index}}" href="{{url absolute="true"}}">{{label}}</a></li>
           {{else}}
-            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem"><a href="{{url absolute="true"}}">{{label}}</a></li>
+            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem"><a class="nav-item-{{@index}}" href="{{url absolute="true"}}">{{label}}</a></li>
           {{/unless}}
         {{/foreach}}
     </ul>
 {{/if}}
+--}}
+
+<ul class="nav navigation-ul" role="menu">
+    {{#foreach navigation}}
+    <li class="{{link_class for=(url) class=(concat "nav-" slug)}} nav-item-{{@index}}" role="menuitem"><a href="{{url absolute="true"}}">{{label}}</a></li>
+    {{/foreach}}
+</ul>
+<div class="nav navigation-fa" role="menu">
+    {{#foreach navigation}}
+      <a class="social-link social-link-fa nav-item-{{@index}}" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener"><i class="fa fa-{{label}}" aria-hidden="true"></i></a>
+    {{/foreach}}
+</div>
+<div class="nav navigation-btn" role="menu">
+    {{#foreach navigation}}
+      {{#unless @index}}
+        <a class="social-link-btn btn btn-primary nav-item-{{@index}}" href="{{url absolute="true"}}" title="{{label}}" target="_blank" rel="noopener">{{label}}</a>
+      {{/unless}}
+    {{/foreach}}
+</div>

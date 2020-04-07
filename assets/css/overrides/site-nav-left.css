@@ -1,0 +1,14 @@
+.site-nav-left {
+  .navigation-fa {
+    display: none;
+  }
+  .navigation-btn {
+    margin-top: 8px;
+    margin-left: 4px;
+  }
+  .navigation-ul {
+    .nav-item-0 {
+      visibility: hidden;
+    }
+  }
+}

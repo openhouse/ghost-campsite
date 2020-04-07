@@ -1,3 +1,12 @@
 .site-footer {
   text-transform: uppercase;
+  .navigation-fa {
+    display: none;
+  }
+  .navigation-btn {
+    display: none;
+  }
+  .navigation-ul {
+    display: none;
+  }
 }

@@ -1,0 +1,5 @@
+.site-nav-right {
+  .navigation-ul, .navigation-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+/* primary action button on index page */
+
+.site-primary-action {
+  z-index: 1000;
+  margin-bottom: 0;
+  /* hide all but primary links from nav */
+  a:not(.nav-item-0) {
+    display: none;
+  }
+  .nav-item-0.social-link-fa {
+    display: none;
+  }
+
+  /* primary button styles */
+  .nav {
+    position: relative;
+  }
+  .navigation-ul, .navigation-fa {
+    display: none;
+  }
+}
