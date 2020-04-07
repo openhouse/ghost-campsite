@@ -12,3 +12,15 @@
     }
   }
 }
+
+/* primary nav link in top left only button after header  */
+.responsive-header-img {
+  .site-nav-content {
+    .navigation-btn .nav-item-0 {
+      display: none;
+    }
+    .navigation-ul .nav-item-0 {
+      visibility: inherit !important;
+    }
+  }
+}

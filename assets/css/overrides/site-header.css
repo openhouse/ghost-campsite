@@ -18,4 +18,8 @@
   .navigation-ul, .navigation-fa {
     display: none;
   }
+  .btn {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
 }
