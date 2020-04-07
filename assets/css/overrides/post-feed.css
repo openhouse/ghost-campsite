@@ -1,7 +1,13 @@
 /* featured posts display as pages */
+/* hide featured and show featured */
 .post-card.featured .post-card-meta.hide-featured {
   display: none;
 }
+.post-card:not(.featured) .post-card-meta.show-featured {
+  display: none;
+}
+
+
 .post-card.featured .btn {
   /* width: 100%; */
   margin-top: 1rem;
