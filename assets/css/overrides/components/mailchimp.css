@@ -1,6 +1,10 @@
 #mc_embed_signup {
   width: 100%;
   font-family: inherit !important;
+
+  h2 {
+    text-transform: uppercase;
+  }
   /* space between checkboxes and their labels */
   input[type='checkbox'] {
       margin-right: 1rem;
@@ -10,6 +14,14 @@
     font-weight: 500;
   }
 
+  .phonefield {
+    white-space: nowrap;
+    .small-meta {
+      padding-top: 0.5rem;
+      display: block;
+    }
+  }
+
 
   /*
   form {
@@ -17,7 +29,4 @@
   }
   */
 
-  h2 {
-    text-transform: uppercase;
-  }
 }
