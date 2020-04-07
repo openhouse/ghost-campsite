@@ -20,6 +20,10 @@ const cssnano = require('cssnano');
 const customProperties = require('postcss-custom-properties');
 const easyimport = require('postcss-easy-import');
 
+/* CAMPSITE */
+const postcssMixins = require('postcss-mixins');
+const postcssNested = require('postcss-nested');
+
 const REPO = 'TryGhost/Casper';
 const REPO_READONLY = 'TryGhost/Casper';
 const CHANGELOG_PATH = path.join(process.cwd(), '.', 'changelog.md');
@@ -50,6 +54,8 @@ function css(done) {
         src('assets/css/*.css', {sourcemaps: true}),
         postcss([
             easyimport,
+            postcssMixins,
+            postcssNested,
             customProperties({preserve: false}),
             colorFunction(),
             autoprefixer(),

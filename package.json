@@ -88,5 +88,9 @@
                 "width": 2000
             }
         }
+    },
+    "dependencies": {
+        "postcss-mixins": "^6.2.3",
+        "postcss-nested": "^4.2.1"
     }
 }
