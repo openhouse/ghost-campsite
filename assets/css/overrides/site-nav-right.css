@@ -3,3 +3,15 @@
     display: none;
   }
 }
+
+.nav-post-title-active .site-nav-right .nav {
+  transform: none;
+  opacity: inherit;
+  visibility: inherit;
+}
+
+@media (max-width: 700px) {
+  .site-nav-right {
+      display: inherit;
+  }
+}
