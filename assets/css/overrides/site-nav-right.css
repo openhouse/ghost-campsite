@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .site-nav-right {
       .social-link-fa:not(.nav-item-0) {
         display: none;
