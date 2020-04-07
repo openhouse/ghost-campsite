@@ -1,0 +1,8 @@
+.card {
+  a {
+    box-shadow: inherit;
+    &:hover, &:active {
+      box-shadow: inherit;
+    }
+  }
+}

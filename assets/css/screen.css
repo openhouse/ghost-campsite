@@ -1,6 +1,10 @@
 @import "casper-screen.css";
-@import "btn.css";
-@import "shadow.css";
+
+@import "components/btn.css";
+@import "components/shadow.css";
+@import "components/card.css";
+@import "components/utilities.css";
+
 @import "overrides.css";
 
 @font-face{

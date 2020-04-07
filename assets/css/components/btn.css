@@ -136,3 +136,38 @@ fieldset:disabled .btn {
 @mixin btn danger, #dc3545, #fff {}
 @mixin btn light, #f8f9fa, #212529 {}
 @mixin btn dark, #343a40, #fff {}
+
+  .btn-link {
+    font-weight: 400;
+    color: #0d6efd;
+    text-decoration: underline;
+  }
+
+  .btn-link:hover {
+    color: #024dbc;
+  }
+
+  .btn-link:disabled, .btn-link.disabled {
+    color: #6c757d;
+  }
+
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+  }
+
+  .btn-sm, .btn-group-sm > .btn {
+    padding: 0.25rem 0.5rem;
+    /* font-size: 0.875rem; */
+    border-radius: 0.2rem;
+  }
+
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  .btn-block + .btn-block {
+    margin-top: 0.5rem;
+  }
