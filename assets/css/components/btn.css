@@ -38,14 +38,14 @@
 .btn:hover {
   color: #212529;
   outline: none;
-  opacity: 0.90 !important;
+  /* opacity: 0.90 !important; */
   text-decoration: none;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
 }
 .btn:active {
   color: #212529;
   outline: none;
-  opacity: 0.85 !important;
+  /* opacity: 0.85 !important; */
 }
 
 
@@ -87,7 +87,6 @@ fieldset:disabled .btn {
       border-color: #0d6efd;
       background-color: var(--cs-color-$(role));
       border-color: var(--cs-color-$(role));
-
     }
 
     .btn-$(role):hover {
@@ -96,6 +95,9 @@ fieldset:disabled .btn {
       border-color: #0257d5;
       background-color: var(--cs-color-$(role));
       border-color: var(--cs-color-$(role));
+
+      background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+                  linear-gradient(var(--cs-color-$(role)), var(--cs-color-$(role)));
     }
 
     .btn-$(role):focus, .btn-$(role).focus {
