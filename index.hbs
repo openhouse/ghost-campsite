@@ -14,9 +14,12 @@ into the {body} of the default.hbs template --}}
                     {{@site.title}}
                 </h1>
                 <h2 class="site-description text-shadow-2">{{@site.description}}</h2>
-                <h2 class="site-primary-action">
+                {{> "primary-embed"}}
+                <h2 class="site-primary-action mt-4">
                   {{navigation}}
                 </h2>
+
+
             </div>
         </div>
     </div>

@@ -1,0 +1,7 @@
+{{#get "pages" include="tags" filter="tag:hash-primaryembed" limit="1" as |primaryEmbeds|}}
+  {{#foreach primaryEmbeds as |post|}}
+    {{#post}}
+      {{content}}
+    {{/post}}
+  {{/foreach}}
+{{/get}}
