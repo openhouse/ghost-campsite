@@ -61,6 +61,8 @@
         "postcss-color-function": "4.1.0",
         "postcss-custom-properties": "9.1.1",
         "postcss-easy-import": "3.0.0",
+        "postcss-mixins": "^6.2.3",
+        "postcss-nested": "^4.2.1",
         "pump": "3.0.0"
     },
     "browserslist": [
@@ -89,8 +91,5 @@
             }
         }
     },
-    "dependencies": {
-        "postcss-mixins": "^6.2.3",
-        "postcss-nested": "^4.2.1"
-    }
+    "dependencies": {}
 }
